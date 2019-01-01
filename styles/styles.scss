@@ -73,12 +73,7 @@ html {
 
 .introduction {
   font-size: $font-size-large;
-  max-width: 640px;
   line-height: 36px;
-
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-  }
 }
 
 p {

@@ -82,14 +82,7 @@ html {
 
 .introduction {
   font-size: 26px;
-  max-width: 640px;
   line-height: 36px;
-}
-
-@media screen and (max-width: 768px) {
-  .introduction {
-    max-width: 100%;
-  }
 }
 
 p {
