@@ -20,7 +20,9 @@ html {
 
 .header:after {
   content: "";
-  background: url(http://lorempixel.com/1440/301/nature/g) center no-repeat;
+  background-image: url(http://lorempixel.com/1440/301/nature/g);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -30,12 +32,39 @@ html {
   z-index: -1;
 }
 
+@media screen and (max-width: 768px) {
+  .header:after {
+    background-image: url(http://lorempixel.com/1024/768/nature/g);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 27px 19px;
+  }
+}
+
 .title {
   font-size: 68px;
+  line-height: 85px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 42px;
+    line-height: 55px;
+  }
 }
 
 .subtitle {
   font-size: 42px;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 19px;
+    line-height: 26px;
+  }
 }
 
 .content {
@@ -45,16 +74,29 @@ html {
   height: 50vh;
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 27px 19px;
+  }
+}
+
 .introduction {
   font-size: 26px;
   max-width: 640px;
-  line-height: 150%;
+  line-height: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .introduction {
+    max-width: 100%;
+  }
 }
 
 p {
   font-size: 19px;
   color: #8c8c8c;
   margin-top: 27px;
+  line-height: 26px;
 }
 
 a {
